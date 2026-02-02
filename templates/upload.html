@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>肖像画をアップロードしてくださいませ</h2>
+<form method="post" enctype="multipart/form-data">
+  <input type="file" name="the_file">
+  <input type="submit" value="送信いたしますわ！">
+</form>
+{% endblock %}

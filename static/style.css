@@ -1,0 +1,22 @@
+body {
+  background-color: #fff0f5;
+}
+h1 {
+  color: #d02090;
+  font-weight: bold;
+  text-align: center;
+}
+
+.portrait-frame {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.portrait-frame img {
+  border: 10px double #d63384;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+  height: auto;
+}

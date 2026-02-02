@@ -1,0 +1,16 @@
+{% extends "base.html" %}{% block title %}ご挨拶のページ{% endblock %}
+
+{% block content %}
+    {% if person %}
+    <h1>ごきげんよう、{{ person }}様！</h1>
+    <div class="portrait-frame">
+      <img src="{{ url_for('static', filename='my_image.png')}}" alt="お座敷の肖像画">
+    </div>
+    {% else %}
+    <h1>お名前を教えてくださる？</h1>
+    <form method="post">
+        <input type="text" name="username">
+        <button type="submit">送信ですわ！</button>
+    </form>
+  {% endif %}
+{% endblock %}

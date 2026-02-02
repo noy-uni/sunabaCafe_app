@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Flaskのお屋敷{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('index')}}">ホーム</a>
+    <a href="{{ url_for('hello_get')}}">ご挨拶</a>
+  </nav>
+  <hr>
+  <div id="content">
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
