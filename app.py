@@ -66,7 +66,7 @@ def get_cookie():
 
 @app.route("/")
 def index():
-  return "お屋敷へようこそですわ!！"
+  return "お屋敷へようこそですわ。お紅茶はいかが？"
 
 @app.route('/login')
 def login():
